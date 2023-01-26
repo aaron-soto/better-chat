@@ -43,7 +43,7 @@ export const SideBar = () => {
     return (
         <div className="side-bar">
             <div className="header">
-                <h3>Chat Rooms</h3>
+                <h3>Rooms</h3>
                 <div className="new-chat" >
                     <PencilSquare onClick={(e) => setAddMenuVisible(!addMenuVisible)} />
                     <form onSubmit={(event) => createRoom(event)} className="form" style={{ display: `${addMenuVisible ? 'block' : 'none'}` }}>
