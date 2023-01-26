@@ -17,6 +17,13 @@ html {
 	overflow: hidden;
 	background-color: #1e9dff;
 }
+.chat-home {
+	height: 100vh;
+	background-color: #212125;
+}
+main {
+	height: 100%;
+}
 
 // ---------------------------------------------------------------/
 // WELCOME SCREEN
@@ -124,8 +131,9 @@ html {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 2rem;
+	padding: 0 1rem;
 	background-color: #212125;
+	border-bottom: 1px solid #353535;
 	h3 {
 		color: #c0c0c0;
 	}
@@ -190,6 +198,83 @@ html {
 			right: -8px;
 			border-radius: 50%;
 			border: 4px solid #212125;
+		}
+	}
+}
+// ---------------------------------------------------------------/
+// SideBar
+// ---------------------------------------------------------------/
+.side-bar {
+	background-color: #212125;
+	width: 250px;
+	height: 100%;
+	border-right: 1px solid #353535;
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 45px;
+		padding: 0 1rem;
+		border-bottom: 1px solid #353535;
+		h3 {
+			color: #c0c0c0;
+		}
+		.new-chat {
+			height: 2rem;
+			width: 2rem;
+			color: #212125;
+			font-size: 1rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #c0c0c0;
+			border-radius: 50%;
+			cursor: pointer;
+			position: relative;
+			.form {
+				background-color: #212125;
+				padding: 0.7rem;
+				border: 1px solid #353535;
+				border-radius: 5px;
+				position: absolute;
+				top: 0;
+				left: 100%;
+				input {
+					background-color: #353535;
+					border: none;
+					font-size: 1rem;
+					padding: 0.4rem 1rem;
+					margin-bottom: 1rem;
+					border-radius: 5px;
+					color: #c0c0c0;
+					cursor: pointer;
+				}
+				button {
+					padding: 0.4rem 1rem;
+					width: 100%;
+					border-radius: 5px;
+					border: none;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	.rooms {
+		button {
+			width: 100%;
+			border-radius: 0;
+			border: none;
+			border-bottom: 1px solid #353535;
+			background-color: #212125;
+			padding: 0.6rem 0;
+			color: #c0c0c0;
+			text-align: left;
+			padding-left: 1rem;
+			font-size: 1rem;
+			cursor: pointer;
+			&:hover {
+				background-color: #353535;
+			}
 		}
 	}
 }
